@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #bf82eb, #6dabe2);
+  }
+  
+  .shape{
+    border-radius: 30px;
+  }
+  
+  .shape:hover{
+    box-shadow: 1px 1px 5px #d80ee6;
+  }
+  
+  .border{
+    border: 2px solid black;
+  }
+  
+  h2{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .calci-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calci-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(174, 126, 242, 0.75);
+  }
+  
+  .calci-grid > button:hover {
+    background-color: rgba(135, 111, 203, 0.9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background: linear-gradient(to right, #7d60f1, #6469bb);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .prev-oper {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .curr-oper {
+    color: white;
+    font-size: 2.5rem;
+  }
+  
